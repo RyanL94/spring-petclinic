@@ -275,6 +275,17 @@
         </dependencies>
       </plugin>
     </plugins>
+      
+          <distributionManagement>
+    <repository>
+        <uniqueVersion>false</uniqueVersion>
+        <id>corp1</id>
+        <name>Corporate Repository</name>
+        <url>file:///home/myfolder/.m2</url>
+        <layout>default</layout>
+    </repository>
+</distributionManagement>
+      
   </build>
 
   <!-- Apache 2 license -->
@@ -322,15 +333,5 @@
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
-
-    <distributionManagement>
-    <repository>
-        <uniqueVersion>false</uniqueVersion>
-        <id>corp1</id>
-        <name>Corporate Repository</name>
-        <url>file:///home/myfolder/.m2</url>
-        <layout>default</layout>
-    </repository>
-</distributionManagement>
     
 </project>
